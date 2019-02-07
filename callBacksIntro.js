@@ -1,6 +1,8 @@
 // The second argument/parameter is expected to be a function
 function findWaldo(arr, found) {
+  //loop through the length of each element of the array  
   for (var i = 0; i < arr.length; i++) {
+    // execute the callback if the string index of the array = "waldo"
     if (arr[i] === "Waldo") {
       // execute callback
       found(i);
